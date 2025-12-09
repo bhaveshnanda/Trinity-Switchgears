@@ -76,7 +76,7 @@ export default function Header() {
 
           <a
             className={styles.cta}
-            href="https://wa.me/91XXXXXXXXXX?text=Hello%20Trinity"
+            href="https://wa.me/918652859663?text=Hello%20Trinity"
             target="_blank"
             onClick={() => setOpen(false)}
           >

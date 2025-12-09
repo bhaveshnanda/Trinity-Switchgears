@@ -3,7 +3,7 @@
 import styles from "./WhatsAppFloat.module.css";
 
 export default function WhatsAppFloat() {
-  const number = "91XXXXXXXXXX"; // replace with actual number
+  const number = "918652859663"; // replace with actual number
   const text = encodeURIComponent("Hello Trinity, I want to place an order");
 
   return (

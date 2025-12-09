@@ -20,7 +20,7 @@ export default function Contractors(){
       </div>
 
       <div style={{marginTop:16}}>
-        <a className="btn btn-primary" href="https://wa.me/91XXXXXXXXXX?text=Register%20as%20Contractor">Register on WhatsApp</a>
+        <a className="btn btn-primary" href="https://wa.me/918652859663?text=Register%20as%20Contractor">Register on WhatsApp</a>
       </div>
     </section>
   );

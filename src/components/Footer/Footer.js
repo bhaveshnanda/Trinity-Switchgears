@@ -69,9 +69,9 @@ export default function Footer() {
           <div>
             <h4 className={styles.heading}>Support</h4>
             <ul className={styles.links}>
-              <li><a href="tel:+91XXXXXXXXXX">Call Us</a></li>
-              <li><a href="mailto:info@trinity.com">Email</a></li>
-              <li><a href="https://wa.me/91XXXXXXXXXX">WhatsApp</a></li>
+              <li><a href="tel:+918652859663">Call Us</a></li>
+              <li><a href="mailto:sales@trinityswitchgear.com">Email</a></li>
+              <li><a href="https://wa.me/918652859663">WhatsApp</a></li>
               <li><Link href="/privacy-policy">Privacy Policy</Link></li>
             </ul>
           </div>

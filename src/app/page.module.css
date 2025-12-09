@@ -84,6 +84,15 @@
   object-fit: fill;
 }
 
+.mid {
+  text-align: center;
+  width: 100%;
+  font-size: 34px;
+  color: #0b5b4a;
+  font-weight: 900;
+}
+
+
 .legacyTitle {
   font-weight: 800;
 }
@@ -327,3 +336,20 @@
   font-weight: 500;
 }
 
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 18px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .contactGrid {
+    grid-template-columns: 1fr; /* stack */
+  }
+
+  .mid {
+    text-align: center;
+  }
+}

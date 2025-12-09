@@ -15,7 +15,7 @@ export default function Switchgear(){
             <div className="small">SKU: {it.sku}</div>
             <div style={{marginTop:8,fontWeight:700}}>{it.price}</div>
             <div style={{marginTop:12}}>
-              <a className="btn btn-primary" href={`https://wa.me/91XXXXXXXXXX?text=Quote%20for%20${encodeURIComponent(it.title)}`}>Enquire on WhatsApp</a>
+              <a className="btn btn-primary" href={`https://wa.me/918652859663?text=Quote%20for%20${encodeURIComponent(it.title)}`}>Enquire on WhatsApp</a>
             </div>
           </div>
         ))}
