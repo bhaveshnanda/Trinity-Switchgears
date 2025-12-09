@@ -1,66 +1,195 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+
+import ProductCard from "@/components/ProductCard/ProductCard";
+import styles from "./page.module.css"; // ✅ keep this
+
+const featured = [
+  {
+    slug: "schneider-mcb-16a",
+    title: "Schneider MCB 16A",
+    short: "Reliable single pole MCB",
+    brand: "Schneider",
+    price: "₹350",
+    image: "/images/product-placeholder.jpg",
+  },
+  {
+    slug: "havells-rccb-2p-63a",
+    title: "Havells RCCB 63A",
+    short: "Earth leakage protection",
+    brand: "Havells",
+    price: "₹1800",
+    image: "/images/product-placeholder.jpg",
+  },
+  {
+    slug: "polycab-3c-2.5",
+    title: "Polycab 3C 2.5mm",
+    short: "3-core copper conductor",
+    brand: "Polycab",
+    price: "₹40/m",
+    image: "/images/product-placeholder.jpg",
+  },
+];
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+    <>
+      {/* HERO SECTION */}
+      <section className={`container ${styles.heroSection}`}>
+        <div className={styles.heroGrid}>
+          <div className={styles.heroLeft}>
+            <h1>Trinity Electric Syndicate</h1>
+
+            <p className="lead">
+              Serving Mumbai’s electrical needs for <strong>100+ years</strong>.
+              Leading supplier of switchgear, cables, panels and
+              contractor-grade electricals. Quick site deliveries across Mumbai.
+            </p>
+
+            <div className={styles.heroButtons}>
+              <a
+                className={styles.whatsappBtn}
+                href="https://wa.me/91XXXXXXXXXX?text=Quick%20Order"
+              >
+                Quick Order (WhatsApp)
+              </a>
+
+              <a className="btn btn-ghost" href="/contractors">
+                Contractor Solutions
+              </a>
+            </div>
+
+            <div className={styles.heroBadges}>
+              <div className="card small">Pan India delivery</div>
+              <div className="card small">
+                Trusted by <b>200+ contractors</b>
+              </div>
+              <div className="card small">100% Genuine Products</div>
+            </div>
+          </div>
+
+          <div className={styles.heroRight}>
+            <img
+              src="/images/shop.avif"
+              alt="shop"
+              className={styles.heroImage}
             />
-            Deploy Now
+
+            <div className={styles.legacyCard}>
+              <div className={styles.legacyLeft}>
+                <img src="/images/legacy.png" className={styles.legacyThumb} />
+
+                <div>
+                  <div className={styles.legacyTitle}>100+ Years</div>
+                  <div className="small">Family-owned since 1917</div>
+                </div>
+              </div>
+
+              <div className={styles.addressBox}>
+                <div className={styles.addrLine}>
+                  154, Shamaldas Gandhi Marg
+                </div>
+                <div className="small">Kalbadevi, Mumbai 400002</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BRANDS WE SELL */}
+      <section className="container">
+        <a className={styles.brandstitle}>Brands We Sell</a>
+        <a className={styles.brandssubtitle}>
+          {" "}
+          - Top Brands, Best Prices — Only at Trinity!
+        </a>
+        <div className={styles.brandsGrid}>
+          <div className={styles.brandCard}>Schneider Electric</div>
+          <div className={styles.brandCard}>Lauritz Knudsen(L&T)</div>
+          <div className={styles.brandCard}>Legrand</div>
+          <div className={styles.brandCard}>Polycab</div>
+          <div className={styles.brandCard}>Finolex</div>
+          <div className={styles.brandCard}>Siemens</div>
+        </div>
+      </section>
+
+      {/* BUILT ON TRUST / ABOUT US */}
+      <section className={`container ${styles.aboutSection}`}>
+        <h2>Built on Trust</h2>
+        <p>
+          Founded in <b>1917</b> , the Trinity Group of Companies is a pioneer
+          in the space of electrical contracting. For over a century, we have
+          provided state-of-the-art products, comprehensive services, and expert
+          consulting to our clients. In this time, the Group has grown from
+          strength to strength. We now offer our clientele a wide array of
+          high-quality electrical cables, reliable switchgears, and advanced
+          home automation solutions. Proudly family-owned, the Trinity Group is
+          united in its mission to ensure the highest level of customer
+          satisfaction through a combination of superior service, deep
+          knowledge, and sound expertise.
+        </p>
+        <p>
+          Over the decades, the Group has earned a reputation for trust,
+          honesty, and customer satisfaction. From the very first, to a hundred
+          years later, Trinity has always stood for the highest quality
+          electrical solutions. Our customers remain our most cherished asset.
+          We fully intend to delight them — and even more customers — for
+          several centuries to come.
+        </p>
+      </section>
+
+      {/* TRUST SECTION */}
+      <section className={`container ${styles.trustSection}`}>
+        <h2>Why Contractors Trust Us</h2>
+
+        <div className={styles.trustGrid}>
+          <div className={styles.trustCard}>
+            <h4>✔ 100+ Years Legacy</h4>
+            <p>
+              Serving Mumbai since the 1917s — unmatched experience in
+              electrical supply.
+            </p>
+          </div>
+
+          <div className={styles.trustCard}>
+            <h4>✔ Fast Site Delivery</h4>
+            <p>
+              2–3 hour delivery anywhere in Mumbai for urgent contractor needs.
+            </p>
+          </div>
+
+          <div className={styles.trustCard}>
+            <h4>✔ Genuine Products Only</h4>
+            <p>We supply only original branded electricals — no duplicates.</p>
+          </div>
+
+          <div className={styles.trustCard}>
+            <h4>✔ 200+ Contractor Clients</h4>
+            <p>
+              Trusted by leading builders, electricians and panel contractors.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* POPULAR CATEGORIES */}
+      <section className="container">
+        <h2>Popular Categories</h2>
+
+        <div className={styles.categoryGrid}>
+          <a className={styles.categoryCard} href="/products/switchgear">
+            Switchgear (MCB, RCCB, MCCB)
           </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+          <a className={styles.categoryCard} href="/products">
+            Cables & Wires
+          </a>
+          <a className={styles.categoryCard} href="/products">
+            Smart Home Devices
+          </a>
+          <a className={styles.categoryCard} href="/products">
+            View all Categories
           </a>
         </div>
-      </main>
-    </div>
+      </section>
+    </>
   );
 }

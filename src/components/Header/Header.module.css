@@ -1,0 +1,132 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg, var(--white), #fbfcfd);
+  border-bottom: 1px solid #edf0f4;
+  z-index: 60;
+  padding: 10px 0;
+  height: 14vh;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo {
+  margin-top: 12px;
+  height: 56px;
+  width: 56px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.logoLink {
+  display: inline-block;
+}
+.titleWrap {
+  line-height: 1;
+}
+.title {
+  margin-top: 12px;
+  font-weight: 800;
+  color: var(--brand);
+  font-size: 26px;
+}
+.subtitle {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 20px;
+  font-weight: 500;
+}
+
+/* Nav */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.nav a {
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navLink{
+  font-size: 18px;
+}
+
+
+.navLink:hover{
+  font-weight: 700;
+}
+
+
+.cta {
+  background: var(--brand);
+  color: var(--white) !important;
+  padding: 8px 12px;
+  border-radius: 8px;
+    transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.cta:hover {
+  background: #25D366;
+  color: black !important;
+    transform: translateY(-2px); /* subtle lift */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Mobile */
+.mobileBtn {
+  display: none;
+  background: none;
+  border: 0;
+  padding: 8px;
+}
+.ham {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #111;
+  position: relative;
+}
+.ham:before,
+.ham:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 22px;
+  background: #111;
+}
+.ham:before {
+  top: -7px;
+}
+.ham:after {
+  top: 7px;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .nav {
+    position: fixed;
+    top: 82px;
+    right: 12px;
+    flex-direction: column;
+    background: var(--white);
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    display: none;
+  }
+  .nav.open {
+    display: flex;
+  }
+  .mobileBtn {
+    display: block;
+  }
+}
