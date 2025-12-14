@@ -1,6 +1,6 @@
 .footer {
   margin-top: 60px;
-  background: #0b5b4a;
+  background: rgb(6, 6, 101);
   color: #fff;
   padding: 40px 0 20px;
   border-radius: 14px 14px 0 0;
@@ -88,7 +88,7 @@
 
 /* Individual Counter Card */
 .counterCard {
-  background: #149f81;
+  background: rgb(83, 83, 226);
   color: #fff;
   padding: 14px 18px;
   border-radius: 12px;
