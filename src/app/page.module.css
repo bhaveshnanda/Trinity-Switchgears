@@ -12,6 +12,7 @@
 
 .heroLeft h1 {
   margin-top: 0;
+  color: var(--brand);
 }
 
 .heroButtons {
@@ -35,8 +36,8 @@
 }
 
 .whatsappBtn:hover {
-  color: black !important;
-  background-color: #25D366; /* slightly darker green on hover */
+  /* color: black !important; */
+  background-color: rgb(84, 84, 255); /* slightly darker green on hover */
   transform: translateY(-2px); /* subtle lift */
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
@@ -111,6 +112,7 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
   margin-top: 12px;
+  margin-bottom: 45px;
 }
 
 /* Product grid */

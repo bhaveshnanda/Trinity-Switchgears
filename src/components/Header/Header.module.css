@@ -38,6 +38,7 @@
   color: var(--muted);
   line-height: 20px;
   font-weight: 500;
+  margin-left: 3px;
 }
 
 /* Nav */
@@ -74,8 +75,8 @@
 }
 
 .cta:hover {
-  background: #25D366;
-  color: black !important;
+  background: rgb(84, 84, 255);
+  /* color: black !important; */
     transform: translateY(-2px); /* subtle lift */
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
