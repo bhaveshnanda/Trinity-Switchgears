@@ -323,12 +323,14 @@
 .brandstitle{
   font-size: 24px;
   font-weight: 700;
+  color: var(--brand);
 }
 
 
 .brandssubtitle{
   font-size: 20px;
   font-weight: 400;
+  color: var(--brand);
 }
 
 .aboutSection p {
