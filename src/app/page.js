@@ -35,7 +35,7 @@ export default function Home() {
     <>
       {/* HERO SECTION */}
       <section className={`container ${styles.heroSection}`}>
-        <br/>
+        <br />
         <div className={styles.heroGrid}>
           <div className={styles.heroLeft}>
             <h1>Trinity Electric Syndicate</h1>
@@ -225,24 +225,17 @@ export default function Home() {
               </a>
             </div>
           </div>
+          <div className={styles.mapCenter}>
+            <h2 className={styles.mapCenterH2}>Find Us</h2>
 
-          <div>
-            <div className={styles.mapCenter}>
-              <h2>Find Us</h2>
-              {/* <iframe
-          title="map"
-          src="https://www.google.com/maps/embed?pb="
-          style={{ width: "100%", height: 260, border: 0, borderRadius: 8 }}
-          loading="lazy"
-        ></iframe> */}
+            <div className={styles.mapWrapper}>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.657165192962!2d72.82669617497395!3d18.946563182231532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf32e293b931%3A0x408b439948bd91bc!2sTRINITY%20ELECTRIC%20SYNDICATE!5e0!3m2!1sen!2sin!4v1765509508112!5m2!1sen!2sin"
-                style={{ width: "330px", height: "300px", border: 0 }}
                 loading="lazy"
-              ></iframe>
+                allowFullScreen
+              />
             </div>
           </div>
-
         </div>
       </section>
     </>

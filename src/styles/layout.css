@@ -51,7 +51,16 @@ body {
 .btn-primary {
   background: var(--brand);
   color: var(--white);
+      transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
+.btn-primary:hover {
+background: rgb(84, 84, 255);
+    transform: translateY(-2px); /* subtle lift */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
 .btn-ghost {
   background: transparent;
   border: 1px solid #e6e9ee;
