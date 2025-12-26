@@ -53,7 +53,6 @@ export default function Home() {
               >
                 Quick Order (WhatsApp)
               </a>
-
               <a className="btn btn-ghost" href="/contractors">
                 Contractor Solutions
               </a>
